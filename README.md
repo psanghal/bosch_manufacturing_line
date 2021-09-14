@@ -1,8 +1,7 @@
 # bosch_manufacturing_line
 University of Michigan: Milestone Project 1
 
-Data Source @ Kaggle.
-Link: https://www.kaggle.com/c/bosch-production-line-performance/data
+Data Source Kaggle: [Bosch Manufacturing Line](https://www.kaggle.com/c/bosch-production-line-performance/data)
 
 Project Description:
 Analyze and predict internal failures of components in a manufacturing assembly line based on various test conditions.
