@@ -17,6 +17,14 @@ Data Manipulation Methods:
 
 •	Processing Steps: After creating spark session, we used a simple function which collected assembly component counts and its usage per production line while avoiding null values. Then, extracted summary statistics as python list or dictionary as seem fit to store results as a csv file for further analysis. 
 
-•	Data Joining Schema: After extracting information from individual tables, in order to connect the 3 csv files, we used production line LSF integer values as foreign keys to establish the relationship. The first merge operation was between category table and the numeric table which helped us gather response variable (pass/fail) per production line. Then, we merged again to see assembly times. However, it was interesting to note that the final merged table had only 22% of the production lines where assembly time and test observations were captured, making us believe that these lines probably acted as a node network for performing critical operations such as assembly of sub-assemblies, which company wanted to keep a watch on.
+•	Data Joining Schema: After extracting information from individual tables, in order to connect the 3 csv files, we used production line LSF integer values as foreign keys to establish the relationship. The first merge operation was between category table and the numeric table which helped us gather response variable (pass/fail) per production line. Then, we merged again to see assembly times. However, it was interesting to note that the final merged table had only 22% of the production lines where assembly time and test observations were captured, making us believe that these lines probably acted as a node network for performing critical operations such as assembly of sub-assemblies, which company would definitely like to keep a watch on.
 
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/39008846/133240009-9599dee3-9456-445b-8e8a-6cb62c9a95d4.png">
+
+Noteboooks used in this analysis: Summarizing full dataset involved creating 3 individual notebooks and one combined notebook. The names of these notebooks are as under. The second block "Merge" uses summary insights from the first block for combined analysis. 
+
+1.	Extract: Bosch_Category Analysis, Bosch_Numeric Analysis, Bosch_Date Analysis
+2.	Merge/ visualize: Bosch_Combined Analysis.
+
+The main goal was to identify breakdown of production lines which were failing often, and then categorize maintenance severity based on similarity pattern with the rest. 
+ 
