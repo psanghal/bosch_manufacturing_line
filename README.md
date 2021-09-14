@@ -20,4 +20,4 @@ Data Manipulation Methods:
 
 •	Data Joining Schema: After extracting information from individual tables, in order to connect the 3 csv files, we used production line LSF integer values as foreign keys to establish the relationship. The first merge operation was between category table and the numeric table which helped us gather response variable (pass/fail) per production line. Then, we merged again to see assembly times. However, it was interesting to note that the final merged table had only 22% of the production lines where assembly time and test observations were captured, making us believe that these lines probably acted as a node network for performing critical operations such as assembly of sub-assemblies, which company wanted to keep a watch on.
 
-<img width="182" alt="image" src="https://user-images.githubusercontent.com/39008846/133240009-9599dee3-9456-445b-8e8a-6cb62c9a95d4.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/39008846/133240009-9599dee3-9456-445b-8e8a-6cb62c9a95d4.png">
